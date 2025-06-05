@@ -1,28 +1,25 @@
+function Navbar() {
+  return (
+    <div className="p-5 font-serif">
+      <div className="flex items-center justify-evenly space-x-10 overflow-x-auto whitespace-nowrap">
+        
+        <ul className="flex space-x-6 text-sm font-medium">
+          <li><a href="/" className="hover:text-gray-400">Home</a></li>
+          <li><a href="/" className="hover:text-gray-400">About</a></li>
+          <li><a href="/" className="hover:text-gray-400">Services</a></li>
+        </ul>
 
+        
+        <img src="telix_logo.png" alt="Telix Logo" className="h-9 w-auto" />
 
-
-function Navbar(){
-
-    return (
-        <div className="nav_container">
-            <img src="telix_logo.png" alt="telix_logo" ></img>
-                
-            <div className="navbar_toggle">
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
-               
-            </div>
-            <ul className="navbar_menu">
-                <li className="navbar_item"><a href="/" className="">Home</a> </li> 
-                <li className="navbar_item"> <a href="/" className="">About</a> </li>
-                <li className="navbar_item"> <a href="/" className="">Services</a> </li> 
-                <li className="navbar_item"> <a href="/" className="">Resources</a> </li> 
-                <li className="navbar_item"> <a href="/" className="">Contact</a> </li> 
-            </ul>   
-        </div>
-    )
+        
+        <ul className="flex space-x-6 text-sm font-medium">
+          <li><a href="/" className="hover:text-gray-400">Resources</a></li>
+          <li><a href="/" className="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  );
 }
-
 
 export default Navbar;

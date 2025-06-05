@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function Help() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -36,29 +36,58 @@ function Help() {
   ];
 
   return (
-    <div className="Help">
-      <h5 className="Help_title">NEED HELP?</h5>
-      <div className="Help_Container">
-        <div className="Help_content">
-          <h1>Frequently Asked Questions</h1>
-          <p>
+    <div className="max-w-3xl m-auto p-6 md:p-12">
+      <h5 className="font-normal text-xs mb-3 uppercase tracking-wide">
+        NEED HELP?
+      </h5>
+
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
+        {/* Left text and illustration */}
+        <div className="flex-1">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-teal-900 mb-4 leading-tight">
+            Frequently
+            <br />
+            Asked Questions
+          </h1>
+          <p className="text-sm md:text-base text-teal-800 max-w-md leading-relaxed mb-10">
             Find answers to common questions about car insurance, coverage options, claims,
             and how Telix Insurance supports you on the road.
           </p>
+
+          {/* Placeholder for illustration */}
+          <div className="bg-[#FFE5B4] rounded-lg p-6 w-56 h-56 flex items-center justify-center">
+            {/* You can replace this with an image or SVG */}
+            <img
+              src="/mnt/data/ee36f055-51b4-4490-a760-cbf7f597eeca.png"
+              alt="Illustration"
+              className="object-contain"
+            />
+          </div>
         </div>
 
-        <div className="Help_content1">
+        {/* FAQ Accordion */}
+        <div className="flex-1 space-y-4">
           {questions.map((item, index) => (
             <div
               key={index}
-              className={`quiz-item ${openIndex === index ? 'open' : ''}`}
+              className={`bg-white rounded-lg shadow-sm p-4 cursor-pointer transition-all duration-300 ${
+                openIndex === index ? "ring-2 ring-teal-300" : ""
+              }`}
               onClick={() => toggleQuestion(index)}
             >
-              <div className="quiz-question">
-                {item.question}
-                <span className="arrow">{openIndex === index ? '+' : '+'}</span>
+              <div className="flex justify-between items-center text-teal-900 font-medium text-sm md:text-base">
+                <span>{item.question}</span>
+                <span
+                  className={`text-xl font-bold transition-transform duration-300 ${
+                    openIndex === index ? "rotate-45" : "rotate-0"
+                  }`}
+                >
+                  +
+                </span>
               </div>
-              {openIndex === index && <p className="quiz-answer">{item.answer}</p>}
+              {openIndex === index && (
+                <p className="mt-3 text-gray-600 text-sm leading-relaxed">{item.answer}</p>
+              )}
             </div>
           ))}
         </div>
