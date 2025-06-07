@@ -9,7 +9,7 @@ function Start() {
         <h1 className="font-extrabold text-teal-700 text-3xl sm:text-3xl md:text-3xl lg:text-4xl mb-4">
           Coverage That Goes the Extra Mile
         </h1>
-        <p className=" text-teal-900 text-sm sm:text-base md:text-lg px-2 sm:px-6 md:px-10 lg:px-16 text-gray-700">
+        <p className=" text-teal-900 text-sm sm:text-base md:text-lg px-2 sm:px-6 md:px-10 lg:px-16">
           From everyday commutes to road trips,<br />
           Telix Car Insurance is here to protect you<br />
           with affordable plans and 24/7 support.
