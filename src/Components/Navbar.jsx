@@ -1,24 +1,42 @@
-import React from "react";
+import React, { useState } from "react"; 
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false); 
+
   return (
     <nav className="font-serif w-full px-4 py-6">
       <div className="max-w-5xl mx-auto flex flex-wrap justify-center md:justify-around items-center gap-4 md:gap-16">
 
-        <div className="flex flex-wrap justify-center items-center gap-8 text-sm font-medium">
-          <a href="#start" className="hover:text-gray-500 transition">Home</a>
-          <a href="#about" className="hover:text-gray-500 transition">About</a>
-          <a href="#services" className="hover:text-gray-500 transition">Services</a>
-        </div>
+        {/* ✅ Mobile menu toggle button */}
+        <button
+          className="md:hidden absolute right-4 top-6 text-xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
 
-        <div className="flex justify-center">
-          <img src="https://i.imgur.com/D3NwETA.png" alt="Telix Logo" className="h-10 w-auto" />
-        </div>
+        {/* ✅ Mobile/desktop link container */}
+        <div className={`w-full md:w-auto flex-col md:flex md:flex-row md:items-center gap-4 md:gap-16 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
+          
+          {/* Left links */}
+          <div className="flex flex-wrap justify-center items-center gap-8 text-sm font-medium">
+            <a href="#start" className="hover:text-gray-500 transition">Home</a>
+            <a href="#about" className="hover:text-gray-500 transition">About</a>
+            <a href="#services" className="hover:text-gray-500 transition">Services</a>
+          </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8 text-sm font-medium">
-          <a href="#testimonials" className="hover:text-gray-500 transition">Testimonials</a>
-          <a href="#help" className="hover:text-gray-500 transition">Help</a>
-          <a href="#contact" className="hover:text-gray-500 transition">Contact</a>
+          {/* Logo */}
+          <div className="flex justify-center">
+            <img src="https://i.imgur.com/D3NwETA.png" alt="Telix Logo" className="h-10 w-auto" />
+          </div>
+
+          {/* Right links */}
+          <div className="flex flex-wrap justify-center items-center gap-8 text-sm font-medium">
+            <a href="#testimonials" className="hover:text-gray-500 transition">Testimonials</a>
+            <a href="#help" className="hover:text-gray-500 transition">Help</a>
+            <a href="#contact" className="hover:text-gray-500 transition">Contact</a>
+          </div>
         </div>
 
       </div>
