@@ -5,9 +5,9 @@ function Partners() {
         <div className="Partners_content flex flex-col sm:flex-row items-center sm:justify-start gap-4 sm:gap-6">
           <h1 className="font-semibold text-xs sm:text-sm mb-2 sm:mb-0">Our Partners</h1>
           <div className="flex flex-wrap items-center justify-center sm:justify-between gap-30">
-            <img src="mtek.png" alt="mtek" className="h-8 w-auto" />
-            <img src="equity.png" alt="equity" className="h-8 w-auto" />
-            <img src="dawit.png" alt="dawit" className="h-8 w-auto" />
+            <img src="https://i.imgur.com/05dEOFY.png" alt="mtek" className="h-8 w-auto" />
+            <img src="https://i.imgur.com/1iAIbYa.png" alt="equity" className="h-8 w-auto" />
+            <img src="https://i.imgur.com/LN2WXsh.png" alt="dawit" className="h-8 w-auto" />
           </div>
         </div>
       </div>

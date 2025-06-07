@@ -12,7 +12,7 @@ function Navbar() {
         </div>
 
         <div className="flex justify-center">
-          <img src="telix_logo.png" alt="Telix Logo" className="h-10 w-auto" />
+          <img src="https://i.imgur.com/D3NwETA.png" alt="Telix Logo" className="h-10 w-auto" />
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-8 text-sm font-medium">

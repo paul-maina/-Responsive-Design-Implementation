@@ -37,7 +37,7 @@ function Help() {
 
   return (
     
-    <div className="max-w-3xl m-auto p-6 md:p-12">
+    <div className="max-w-4xl m-auto p-2 md:p-2">
         
       <h5 className="font-normal text-xs mb-3 uppercase tracking-wide">
         NEED HELP?
@@ -59,7 +59,7 @@ function Help() {
           
           <div>
             
-            <img src="Needhelp.png" alt="Needhelp" className="w-auto h-60 rounded-4xl flex items-center justify-center"/>
+            <img src="https://i.imgur.com/7UNF1Rr.png" alt="Needhelp" className="w-auto h-60 rounded-4xl flex items-center justify-center"/>
           </div>
         </div>
 
