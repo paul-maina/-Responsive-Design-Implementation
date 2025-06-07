@@ -14,3 +14,5 @@ If you are developing a production application, we recommend using TypeScript wi
 =======
 # -Responsive-Design-Implementation
 >>>>>>> d5be86d478716a6b4a4c7945604666d72b41397a
+
+The background colour is blue to show trust, Dark navy or slate for Professionalism, Calm greens for Safety	and teal accents for Confidence.

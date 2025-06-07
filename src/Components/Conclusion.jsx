@@ -2,11 +2,10 @@ import React from 'react';
 
 function Conclusion() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-6 py-10 max-w-3xl m-auto">
-      
-      {/* Telix Footer Info */}
+    <div className="flex flex-col md:flex-row justify-between items-center gap-6 px-6 py-10 max-w-4xl m-auto">
+        
       <div className="bg-white rounded-2xl p-6 md:p-8 shadow w-full md:w-1/2">
-        <h1 className="text-xl font-bold text-[#003333] mb-4">Telix</h1>
+        <h1 className="text-xl font-bold  text-green-700 mb-4">Telix</h1>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm text-[#1f2d2b]">
           <ul className="space-y-1">
             <li>About</li>
@@ -29,11 +28,11 @@ function Conclusion() {
         <p className="text-xs text-gray-400 mt-6">© 2025 Telix Insurance. All rights reserved.</p>
       </div>
 
-      {/* Telix CTA Card */}
+      
       <div className="bg-[#003333] text-white rounded-2xl p-8 w-full md:w-1/2 relative overflow-hidden">
-        {/* Optional illustration/emoji placeholder */}
-        <div className="absolute top-4 right-4 text-2xl">🌼🌸</div>
-        <h2 className="text-2xl font-bold mb-4 leading-snug">
+   
+        <div className="absolute top-4 right-4 text-2xl">🏍🚓🚚🚌</div>
+        <h2 className="text-2xl  text-green-700 font-bold mb-4 leading-snug">
           Find Protection,<br />
           Confidence,<br />
           and Peace of Mind.

@@ -36,36 +36,34 @@ function Help() {
   ];
 
   return (
+    
     <div className="max-w-3xl m-auto p-6 md:p-12">
+        
       <h5 className="font-normal text-xs mb-3 uppercase tracking-wide">
         NEED HELP?
       </h5>
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
-        {/* Left text and illustration */}
+        
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-teal-900 mb-4 leading-tight">
+          <h1 className="text-3xl md:text-3xl font-extrabold text-green-700 mb-4 leading-tight">
             Frequently
             <br />
             Asked Questions
           </h1>
-          <p className="text-sm md:text-base text-teal-800 max-w-md leading-relaxed mb-10">
+          <p className="text-sm md:text-base text-teal-900 max-w-md leading-relaxed mb-10">
             Find answers to common questions about car insurance, coverage options, claims,
             and how Telix Insurance supports you on the road.
           </p>
 
-          {/* Placeholder for illustration */}
-          <div className="bg-[#FFE5B4] rounded-lg p-6 w-56 h-56 flex items-center justify-center">
-            {/* You can replace this with an image or SVG */}
-            <img
-              src="/mnt/data/ee36f055-51b4-4490-a760-cbf7f597eeca.png"
-              alt="Illustration"
-              className="object-contain"
-            />
+          
+          <div>
+            
+            <img src="Needhelp.png" alt="Needhelp" className="w-auto h-60 rounded-4xl flex items-center justify-center"/>
           </div>
         </div>
 
-        {/* FAQ Accordion */}
+       
         <div className="flex-1 space-y-4">
           {questions.map((item, index) => (
             <div
@@ -92,7 +90,9 @@ function Help() {
           ))}
         </div>
       </div>
+      
     </div>
+   
   );
 }
 

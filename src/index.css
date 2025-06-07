@@ -4,11 +4,11 @@
 
 
 #root{
-  background-color: rgb(255, 255, 255);
   margin: 0%;
   padding:1rem;
-  max-width:1024px;
+  background-color:rgb(205, 205, 235);
   font-family: 'Segoe UI', sans-serif;
+ 
 }
 
 
